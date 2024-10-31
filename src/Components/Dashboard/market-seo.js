@@ -1,17 +1,16 @@
 import { Card, List, Typography } from "antd"
 import { useState } from "react"
-import ContactSkeloton from "../skeleton/notification";
+import MarketSeoSkeleton from "../skeleton/marketSeo";
 
-function Contacts() {
+function MarketSeo() {
     const [isLoading, setIsLoading] = useState(false);
     return (
         <div>
-            <Card
-            style={{ 
-              height: '100%', 
-              backgroundColor: '#fff8f8', 
-              borderTopLeftRadius: '0px', 
-              borderTopRightRadius: '0px'}}
+            <div
+          style={{ 
+            height: '100%', 
+            backgroundColor: '#fff8f8', 
+            borderRadius: '0px'}}
             headStyle={{padding: '8px 16px'}}
             bodyStyle={{ padding: '0 1rem'}}
             title={
@@ -22,27 +21,26 @@ function Contacts() {
                    <Typography.Text
                    size='sm'
                    style={{ marginLeft: "0.2rem"}}
-                   >Contacts</Typography.Text>
+                   >Request</Typography.Text>
                 </div>
             }
             > 
           {isLoading ? (
             <List
             itemLayout="horizontal"
-            dataSource={Array.from({ length: 6 }).map((_, index) => ({
+            dataSource={Array.from({ length: 1 }).map((_, index) => ({
                 id: index,
             }))}
-            renderItem={() => <ContactSkeloton />}
+            renderItem={() => <MarketSeoSkeleton />}
             />
           ) : (
             <List>
-
             </List>
           )}
-            </Card>
+            </div>
 
         </div>
     )
 }
 
-export default Contacts
+export default MarketSeo

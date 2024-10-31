@@ -1,6 +1,6 @@
 import { Badge, List, Typography, Skeleton } from "antd"
 
-function ActivitiesSkelenton() {
+function MarketSeoSkeleton() {
     return (
         <List.Item>
            <List.Item.Meta 
@@ -17,7 +17,7 @@ function ActivitiesSkelenton() {
             <Skeleton.Button 
             active
             style={{
-                width: "260px",
+                width: "180px",
                 marginTop: "8px",
                 height: "16px"
             }}
@@ -29,4 +29,4 @@ function ActivitiesSkelenton() {
     )
 }
 
-export default ActivitiesSkelenton
+export default MarketSeoSkeleton
