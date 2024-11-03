@@ -11,6 +11,8 @@ import ReportsGenerated from "../../Components/Dashboard/reports-generated";
 import TrafficLocation from "../../Components/Dashboard/traffic-location";
 import MarketSeo from "../../Components/Dashboard/market-seo";
 import Activities from "../../Components/Dashboard/activites";
+import BarchartReports from "../../Components/Graph/barchartReports";
+import TotalUsers from "../../Components/Dashboard/total-users";
 
 function Dashboard() {
   return (
@@ -25,23 +27,23 @@ function Dashboard() {
           }}
         >
           <Row>
-            <Col xs={24} sm={24} xl={6} style={{ paddingRight: "10px" }}>
+            <Col xs={24} sm={24} xl={6} style={{ padding: "10px" }}>
               <CardRequest />
             </Col>
-            <Col xs={24} sm={24} xl={6} style={{ paddingRight: "10px" }}>
+            <Col xs={24} sm={24} xl={6} style={{ padding: "10px" }}>
               <CardKyc />
             </Col>
-            <Col xs={24} sm={24} xl={6} style={{ paddingRight: "10px" }}>
+            <Col xs={24} sm={24} xl={6} style={{ padding: "10px" }}>
               <CardTask />
             </Col>
-            <Col xs={24} sm={24} xl={6} style={{ paddingRight: "20px" }}>
+            <Col xs={24} sm={24} xl={6} style={{ padding: "10px" }}>
               <CardCustomer />
             </Col>
           </Row>
 
           <Row>
             <Col xs={24} sm={24} xl={18} style={{ padding: "20px" }}>
-              <RequestGenerated />
+              <TotalUsers />
             </Col>
             <Col xs={24} sm={24} xl={6} style={{ padding: "20px" }}>
               <TrafficWebsite />
@@ -62,7 +64,6 @@ function Dashboard() {
           </Row>
         </Col>
         <Col xs={24} sm={24} xl={4} style={{}}>
-          {" "}
           <Notifcations />
           <Activities />
           <Contacts />

@@ -8,10 +8,13 @@ function CardRequest() {
     <div>
       <div
         style={{
-          height: "100%",
-          minWidth: "200px",
+          height: "112px",
           backgroundColor: "#E3F5FF",
           borderRadius: "16px",
+          minWidth: "200px",
+          padding: "24px",
+          display: "flex",
+          justifyContent: "center",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -37,7 +40,60 @@ function CardRequest() {
             renderItem={() => <CardRequestSkeleton />}
           />
         ) : (
-          <List></List>
+          <List>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+              }}
+            >
+              <p
+                style={{
+                  font: "inter",
+                  fontWeight: "400",
+                  fontSize: "12px",
+                  lineHeight: "18px",
+                  marginTop: "30px",
+                }}
+              >
+                Requests
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  width: "160px",
+                  marginTop: "-20px",
+                }}
+              >
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "600",
+                    fontSize: "24px",
+                    lineHeight: "36px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  7,265
+                </p>
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "400",
+                    fontSize: "12px",
+                    lineHeight: "18px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  +11.02%
+                </p>
+              </div>
+            </div>
+          </List>
         )}
       </div>
     </div>

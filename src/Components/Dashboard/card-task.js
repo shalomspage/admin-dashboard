@@ -8,9 +8,13 @@ function CardTask() {
     <div>
       <div
         style={{
-          height: "100%",
+          height: "112px",
           backgroundColor: "#E3F5FF",
           borderRadius: "16px",
+          minWidth: "200px",
+          padding: "24px",
+          display: "flex",
+          justifyContent: "center",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -36,7 +40,60 @@ function CardTask() {
             renderItem={() => <CardTaskSkeleton />}
           />
         ) : (
-          <List></List>
+          <List>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+              }}
+            >
+              <p
+                style={{
+                  font: "inter",
+                  fontWeight: "400",
+                  fontSize: "12px",
+                  lineHeight: "18px",
+                  marginTop: "30px",
+                }}
+              >
+                Tasks
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  width: "160px",
+                  marginTop: "-20px",
+                }}
+              >
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "600",
+                    fontSize: "24px",
+                    lineHeight: "36px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  156
+                </p>
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "400",
+                    fontSize: "12px",
+                    lineHeight: "18px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  +15.03%
+                </p>
+              </div>
+            </div>
+          </List>
         )}
       </div>
     </div>

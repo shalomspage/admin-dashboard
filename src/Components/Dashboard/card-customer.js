@@ -8,9 +8,13 @@ function CardCustomer() {
     <div>
       <div
         style={{
-          height: "100%",
+          height: "112px",
           backgroundColor: "#E5ECF6",
           borderRadius: "16px",
+          minWidth: "200px",
+          padding: "24px",
+          display: "flex",
+          justifyContent: "center",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -21,9 +25,10 @@ function CardCustomer() {
               alignContent: "flex-start",
             }}
           >
-            <Typography.Text size="sm" style={{ marginLeft: "0.2rem" }}>
-              Request
-            </Typography.Text>
+            <Typography.Text
+              size="sm"
+              style={{ marginLeft: "0.2rem" }}
+            ></Typography.Text>
           </div>
         }
       >
@@ -36,7 +41,60 @@ function CardCustomer() {
             renderItem={() => <CardCustomerSkeleton />}
           />
         ) : (
-          <List></List>
+          <List>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignContent: "center",
+              }}
+            >
+              <p
+                style={{
+                  font: "inter",
+                  fontWeight: "400",
+                  fontSize: "12px",
+                  lineHeight: "18px",
+                  marginTop: "30px",
+                }}
+              >
+                Customers
+              </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  width: "160px",
+                  marginTop: "-20px",
+                }}
+              >
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "600",
+                    fontSize: "24px",
+                    lineHeight: "36px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  2,318
+                </p>
+                <p
+                  style={{
+                    font: "inter",
+                    fontWeight: "400",
+                    fontSize: "12px",
+                    lineHeight: "18px",
+                    color: "#1c1c1c",
+                  }}
+                >
+                  +6.08%
+                </p>
+              </div>
+            </div>
+          </List>
         )}
       </div>
     </div>
