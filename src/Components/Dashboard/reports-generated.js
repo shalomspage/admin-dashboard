@@ -16,7 +16,7 @@ import {
 } from "recharts";
 
 function ReportsGenerated() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const data = [
     {
       device: "Linux",
@@ -50,7 +50,7 @@ function ReportsGenerated() {
           height: "100%",
           backgroundColor: "#fff8f8",
           borderRadius: "10px",
-          width: "20px",
+          padding: "24px",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -70,7 +70,7 @@ function ReportsGenerated() {
         {isLoading ? (
           <List
             itemLayout="horizontal"
-            dataSource={Array.from({ length: 1 }).map((_, index) => ({
+            dataSource={Array.from({ length: 3 }).map((_, index) => ({
               id: index,
             }))}
             renderItem={() => <ReportsGeneratedSkeleton />}

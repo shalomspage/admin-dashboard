@@ -19,7 +19,7 @@ function TotalUsersSkeleton() {
             style={{
               width: "180px",
               marginTop: "8px",
-              height: "16px",
+              height: "19px",
             }}
           />
         }

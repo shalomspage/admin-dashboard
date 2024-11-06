@@ -16,7 +16,7 @@ import {
 } from "recharts";
 
 function MarketSeo() {
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const data = [
     {
       day: "05-01",
@@ -61,7 +61,8 @@ function MarketSeo() {
         style={{
           height: "100%",
           backgroundColor: "#fff8f8",
-          borderRadius: "0px",
+          borderRadius: "16px",
+          padding: "24px",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -81,7 +82,7 @@ function MarketSeo() {
         {isLoading ? (
           <List
             itemLayout="horizontal"
-            dataSource={Array.from({ length: 1 }).map((_, index) => ({
+            dataSource={Array.from({ length: 4 }).map((_, index) => ({
               id: index,
             }))}
             renderItem={() => <MarketSeoSkeleton />}

@@ -3,7 +3,7 @@ import { useState } from "react"
 import TrafficWebsiteSkeleton from "../skeleton/trafficWebsite";
 
 function TrafficWebsite() {
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
     return (
       <div>
         <div
@@ -12,7 +12,6 @@ function TrafficWebsite() {
             backgroundColor: "#F7F9FB",
             borderRadius: "16px",
             padding: "24px",
-            minWidth: "200px",
           }}
           headStyle={{ padding: "8px 16px" }}
           bodyStyle={{ padding: "0 1rem" }}
@@ -22,17 +21,13 @@ function TrafficWebsite() {
                 display: "flex",
                 alignContent: "flex-start",
               }}
-            >
-              <Typography.Text size="sm" style={{ marginLeft: "0.2rem" }}>
-                Request
-              </Typography.Text>
-            </div>
+            ></div>
           }
         >
           {isLoading ? (
             <List
               itemLayout="horizontal"
-              dataSource={Array.from({ length: 1 }).map((_, index) => ({
+              dataSource={Array.from({ length: 3 }).map((_, index) => ({
                 id: index,
               }))}
               renderItem={() => <TrafficWebsiteSkeleton />}

@@ -5,7 +5,7 @@ import { Chart } from "chart.js";
 
 function TrafficLocation() {
   const charRef = useRef(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const data = {
     labels: ["Nigeria", "Ghana", "Kenya", "Benin Republic"],
@@ -59,7 +59,7 @@ function TrafficLocation() {
           height: "100%",
           backgroundColor: "#fff8f8",
           borderRadius: "16px",
-          padding: "20px",
+          padding: "24px",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -74,7 +74,7 @@ function TrafficLocation() {
         {isLoading ? (
           <List
             itemLayout="horizontal"
-            dataSource={Array.from({ length: 1 }).map((_, index) => ({
+            dataSource={Array.from({ length: 3 }).map((_, index) => ({
               id: index,
             }))}
             renderItem={() => <TrafficLocationSkeleton />}

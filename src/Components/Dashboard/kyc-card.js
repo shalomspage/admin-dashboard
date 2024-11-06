@@ -8,11 +8,8 @@ function KycCard() {
     <div>
       <div
         style={{
-          height: "112px",
           backgroundColor: "#E5ECF6",
           borderRadius: "16px",
-          minWidth: "200px",
-          padding: "24px",
           display: "flex",
           justifyContent: "center",
         }}
@@ -65,8 +62,7 @@ function KycCard() {
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "center",
-                  justifyContent: "space-between",
-                  width: "160px",
+                  gap: "10px",
                   marginTop: "-20px",
                 }}
               >

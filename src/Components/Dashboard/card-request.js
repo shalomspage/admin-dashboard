@@ -8,11 +8,8 @@ function CardRequest() {
     <div>
       <div
         style={{
-          height: "112px",
           backgroundColor: "#E3F5FF",
           borderRadius: "16px",
-          minWidth: "200px",
-          padding: "24px",
           display: "flex",
           justifyContent: "center",
         }}
@@ -64,8 +61,7 @@ function CardRequest() {
                   display: "flex",
                   flexDirection: "row",
                   alignItems: "center",
-                  justifyContent: "space-between",
-                  width: "160px",
+                  gap: "10px",
                   marginTop: "-20px",
                 }}
               >

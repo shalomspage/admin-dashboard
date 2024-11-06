@@ -10,7 +10,6 @@ function Contacts() {
       <div
         style={{
           height: "100%",
-          minWidth: "264px",
           backgroundColor: "#fff8f8",
           borderRadius: "0px",
           padding: "20px",
@@ -19,7 +18,6 @@ function Contacts() {
           gap: "8px",
           alignItems: "center",
           alignItems: "flex-start",
-          // width: "250px",
         }}
         headStyle={{ padding: "8px 16px" }}
         bodyStyle={{ padding: "0 1rem" }}
@@ -36,112 +34,113 @@ function Contacts() {
           </div>
         }
       >
-        {/* {isLoading ? (
-            <List
-              itemLayout="horizontal"
-              dataSource={Array.from({ length: 4 }).map((_, index) => ({
-                id: index,
-              }))}
-              renderItem={() => <ContactSkelenton />}
-            />
-          ) : (
-            <List></List>
-          )} */}
-        <div style={{ display: "flex", alignItems: "center" }}>
-          <div>
-            <p className="text-p1">Contacts</p>
-          </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img
-            src={id}
-            alt="id"
-            style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+        {isLoading ? (
+          <List
+            itemLayout="horizontal"
+            dataSource={Array.from({ length: 4 }).map((_, index) => ({
+              id: index,
+            }))}
+            renderItem={() => <ContactSkelenton />}
           />
+        ) : (
+          <List>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div>
+                <p className="text-p1">Contacts</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img
+                src={id}
+                alt="id"
+                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+              />
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "2px",
-              alignItems: "start",
-            }}
-          >
-            <p className="text-p1">Changed the Style.</p>
-          </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img
-            src={id}
-            alt="id"
-            style={{ width: "40px", height: "40px", borderRadius: "30px" }}
-          />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                  alignItems: "start",
+                }}
+              >
+                <p className="text-p1">Changed the Style.</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img
+                src={id}
+                alt="id"
+                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+              />
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "2px",
-              alignItems: "start",
-            }}
-          >
-            <p className="text-p1">Released a mew verdion.</p>
-          </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img
-            src={id}
-            alt="id"
-            style={{ width: "40px", height: "40px", borderRadius: "30px" }}
-          />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                  alignItems: "start",
+                }}
+              >
+                <p className="text-p1">Released a mew verdion.</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img
+                src={id}
+                alt="id"
+                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+              />
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "2px",
-              alignItems: "start",
-            }}
-          >
-            <p className="text-p1">Submitted a bug.</p>
-          </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img
-            src={id}
-            alt="id"
-            style={{ width: "40px", height: "40px", borderRadius: "30px" }}
-          />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                  alignItems: "start",
+                }}
+              >
+                <p className="text-p1">Submitted a bug.</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img
+                src={id}
+                alt="id"
+                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+              />
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "2px",
-              alignItems: "start",
-            }}
-          >
-            <p className="text-p1">Modified A data in Page X.</p>
-          </div>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-          <img
-            src={id}
-            alt="id"
-            style={{ width: "40px", height: "40px", borderRadius: "30px" }}
-          />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                  alignItems: "start",
+                }}
+              >
+                <p className="text-p1">Modified A data in Page X.</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+              <img
+                src={id}
+                alt="id"
+                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+              />
 
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "2px",
-              alignItems: "start",
-            }}
-          >
-            <p className="text-p1">Deleted a page in Project...</p>
-          </div>
-        </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "2px",
+                  alignItems: "start",
+                }}
+              >
+                <p className="text-p1">Deleted a page in Project...</p>
+              </div>
+            </div>
+          </List>
+        )}
       </div>
     </div>
   );
