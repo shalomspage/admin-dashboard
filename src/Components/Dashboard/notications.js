@@ -1,7 +1,7 @@
 import { Card, List, Typography } from "antd"
 import { useState } from "react"
 import NotificationSkelenton from "../skeleton/notification";
-import id from "../assets/brivel.jpg";
+import { broadcast, bug, newuser } from "../icons";
 
 function Notifcations() {
   const [isLoading, setIsLoading] = useState(false);
@@ -51,9 +51,15 @@ function Notifcations() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <img
-                src={id}
-                alt="id"
-                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+                src={bug}
+                alt="bug"
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "30px",
+                  backgroundColor: "#E3F5FF",
+                  padding: "4px",
+                }}
               />
 
               <div
@@ -70,9 +76,9 @@ function Notifcations() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <img
-                src={id}
-                alt="id"
-                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+                src={newuser}
+                alt="new user"
+                style={{ width: "24px", height: "24px", borderRadius: "30px" }}
               />
 
               <div
@@ -89,9 +95,15 @@ function Notifcations() {
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
               <img
-                src={id}
-                alt="id"
-                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+                src={bug}
+                alt="bug"
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "30px",
+                  backgroundColor: "#E3F5FF",
+                  padding: "4px",
+                }}
               />
 
               <div
@@ -106,11 +118,24 @@ function Notifcations() {
                 <p className="text-p2">12 hours ago</p>
               </div>
             </div>
-            <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "4px",
+              }}
+            >
               <img
-                src={id}
-                alt="id"
-                style={{ width: "40px", height: "40px", borderRadius: "30px" }}
+                src={broadcast}
+                alt="broad cast"
+                style={{
+                  width: "24px",
+                  height: "24px",
+                  borderRadius: "30px",
+                  backgroundColor: "#E3F5FF",
+                  padding: "4px",
+                }}
               />
 
               <div

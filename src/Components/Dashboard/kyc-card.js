@@ -1,6 +1,7 @@
 import { Card, List, Typography } from "antd";
 import { useState } from "react";
 import CardKycSkeleton from "../skeleton/cardKyc";
+import { down } from "../icons";
 
 function KycCard() {
   const [isLoading, setIsLoading] = useState(false);
@@ -88,6 +89,7 @@ function KycCard() {
                 >
                   -0.03%
                 </p>
+                <img src={down} />
               </div>
             </div>
           </List>

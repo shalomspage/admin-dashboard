@@ -1,6 +1,7 @@
 import { Card, List, Typography } from "antd";
 import { useState } from "react";
 import CardCustomerSkeleton from "../skeleton/cardCustomer";
+import { up } from "../icons";
 
 function CardCustomer() {
   const [isLoading, setIsLoading] = useState(false);
@@ -88,6 +89,7 @@ function CardCustomer() {
                 >
                   +6.08%
                 </p>
+                <img src={up} />
               </div>
             </div>
           </List>
